@@ -1,6 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaEnvelope } from "react-icons/fa";
+import Amir from "../assets/img-two.jpg";
+import Etezazi from "../assets/img-one.jpg";
+import Hessam from "../assets/img-three.jpg";
 
 const TeamMember = ({ member, index }) => {
   return (
@@ -48,41 +51,36 @@ const TeamMember = ({ member, index }) => {
 const Team = () => {
   const teamMembers = [
     {
-      name: "John Smith",
-      position: "CEO & Founder",
-      description:
-        "With over 20 years of experience in industrial engineering and leadership.",
-      email: "john.smith@etezazi.com",
-      linkedin: "https://linkedin.com/in/johnsmith",
+      image: Etezazi,
+      name: "Masoud Etezazi",
+      position: "President/Founder",
+      //   description:
+      //     "With over 20 years of experience in industrial engineering and leadership.",
+      email: "",
+      linkedin: "",
     },
     {
-      name: "Sarah Johnson",
+      image: Amir,
+      name: "Amir Etezazi",
       position: "Chief Technology Officer",
-      description: "Leading our technological innovations and R&D initiatives.",
-      email: "sarah.johnson@etezazi.com",
-      linkedin: "https://linkedin.com/in/sarahjohnson",
+      //   description: "Leading our technological innovations and R&D initiatives.",
+      email: "",
+      linkedin: "",
     },
     {
-      name: "Michael Chen",
-      position: "Head of Engineering",
-      description: "Expert in automation and manufacturing processes.",
-      email: "michael.chen@etezazi.com",
-      linkedin: "https://linkedin.com/in/michaelchen",
+      image: Hessam,
+      name: "Hessam Vali",
+      position: "Quality Management System QMS",
+      //   description: "Expert in automation and manufacturing processes.",
+      email: "",
+      linkedin: "",
     },
     {
-      name: "Emily Rodriguez",
-      position: "Operations Director",
-      description: "Streamlining operations and ensuring quality excellence.",
-      email: "emily.rodriguez@etezazi.com",
-      linkedin: "https://linkedin.com/in/emilyrodriguez",
-    },
-    {
-      name: "David Kim",
-      position: "Innovation Lead",
-      description:
-        "Driving forward-thinking solutions and strategic initiatives.",
-      email: "david.kim@etezazi.com",
-      linkedin: "https://linkedin.com/in/davidkim",
+      name: "Kathy Williams",
+      position: "Human Resoure",
+      //   description: "Streamlining operations and ensuring quality excellence.",
+      email: "",
+      linkedin: "",
     },
   ];
 
