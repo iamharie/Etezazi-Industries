@@ -1,28 +1,25 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Landing from "./components/Landing";
-import Services from "./components/Services";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import ServicesPage from "./pages/ServicesPage";
+import ContactPage from "./pages/ContactPage";
+import TeamPage from "./pages/TeamPage";
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-primary">
+      <div className="min-h-screen bg-primary flex flex-col">
         <Navbar />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Landing />
-                <Services />
-                <Contact />
-              </>
-            }
-          />
-        </Routes>
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/team" element={<TeamPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </main>
         <Footer />
       </div>
     </Router>
