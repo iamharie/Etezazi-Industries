@@ -1,13 +1,14 @@
 import React from "react";
+import { FaLinkedin, FaTwitterSquare, FaFacebookSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white py-8">
+    <footer className="bg-secondary text-gray py-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Etezazi Industries</h3>
-            <p>Leading the future of industrial innovation</p>
+            <p>Rapid Response with Accurate Solutions </p>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Contact</h3>
@@ -16,17 +17,41 @@ const Footer = () => {
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>
-            <div className="space-x-4">
-              <a href="#" className="hover:text-accent">
-                LinkedIn
+            <div className="flex space-x-4">
+              <a
+                href={null}
+                className="flex flex-col items-center hover:text-accent transition-colors cursor-pointer"
+              >
+                <FaLinkedin size={24} />
+                <span className="mt-2 text-sm">LinkedIn</span>
               </a>
-              <a href="#" className="hover:text-accent">
-                Twitter
+              <a
+                href={null}
+                className="flex flex-col items-center hover:text-accent transition-colors cursor-pointer"
+              >
+                <FaTwitterSquare size={24} />
+                <span className="mt-2 text-sm">Twitter</span>
               </a>
-              <a href="#" className="hover:text-accent">
-                Facebook
+
+              <a
+                href={null}
+                className="flex flex-col items-center hover:text-accent transition-colors cursor-pointer"
+              >
+                <FaFacebookSquare size={24} />
+                <span className="mt-2 text-sm">Facebook</span>
               </a>
             </div>
+            {/* <div className="space-x-4 cursor-pointer">
+              <a href={null} className="hover:text-accent ">
+                LinkedIn
+              </a>
+              <a href={null} className="hover:text-accent">
+                Twitter
+              </a>
+              <a href={null} className="hover:text-accent">
+                Facebook
+              </a>
+            </div> */}
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">

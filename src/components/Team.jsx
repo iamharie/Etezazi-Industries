@@ -24,21 +24,21 @@ const TeamMember = ({ member, index }) => {
         />
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-bold text-white mb-2">{member.name}</h3>
-        <p className="text-gray-300 mb-2">{member.position}</p>
-        <p className="text-gray-400 text-sm mb-4">{member.description}</p>
+        <h3 className="text-xl font-bold text-gray mb-2">{member.name}</h3>
+        <p className="text-gray mb-2">{member.position}</p>
+        <p className="text-gray text-sm mb-4">{member.description}</p>
         <div className="flex space-x-4">
           <a
             href={member.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-accent transition-colors"
+            className="text-gray hover:text-accent transition-colors"
           >
             <FaLinkedin size={24} />
           </a>
           <a
             href={`mailto:${member.email}`}
-            className="text-white hover:text-accent transition-colors"
+            className="text-gray hover:text-accent transition-colors"
           >
             <FaEnvelope size={24} />
           </a>
@@ -56,31 +56,31 @@ const Team = () => {
       position: "President/Founder",
       //   description:
       //     "With over 20 years of experience in industrial engineering and leadership.",
-      email: "",
-      linkedin: "",
+      email: null,
+      linkedin: null,
     },
     {
       image: Amir,
       name: "Amir Etezazi",
       position: "Chief Technology Officer",
       //   description: "Leading our technological innovations and R&D initiatives.",
-      email: "",
-      linkedin: "",
+      email: null,
+      linkedin: null,
     },
     {
       image: Hessam,
       name: "Hessam Vali",
       position: "Quality Management System QMS",
       //   description: "Expert in automation and manufacturing processes.",
-      email: "",
-      linkedin: "",
+      email: null,
+      linkedin: null,
     },
     {
       name: "Kathy Williams",
-      position: "Human Resoure",
+      position: "Human Resource",
       //   description: "Streamlining operations and ensuring quality excellence.",
-      email: "",
-      linkedin: "",
+      email: null,
+      linkedin: null,
     },
   ];
 
@@ -93,8 +93,8 @@ const Team = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-white mb-4">Our Team</h2>
-          <p className="text-gray-300 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray mb-4">Our Team</h2>
+          <p className="text-gray max-w-2xl mx-auto">
             Meet the experts behind Etezazi Industries' success. Our team brings
             together decades of experience in industrial innovation and
             leadership.

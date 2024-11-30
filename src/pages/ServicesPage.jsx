@@ -36,7 +36,7 @@ const ServicesPage = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-white"
+          className="text-gray"
         >
           <h1 className="text-4xl font-bold mb-12 text-center">Our Services</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -50,7 +50,7 @@ const ServicesPage = () => {
               >
                 <div className="text-4xl mb-4">{service.icon}</div>
                 <h2 className="text-2xl font-bold mb-4">{service.title}</h2>
-                <p className="text-gray-300">{service.description}</p>
+                <p className="text-gray">{service.description}</p>
               </motion.div>
             ))}
           </div>

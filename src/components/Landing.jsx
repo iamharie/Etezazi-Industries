@@ -21,7 +21,7 @@ const Landing = () => {
               Leading the way in innovative industrial solutions and
               manufacturing excellence.
             </p>
-            <button className="bg-accent px-8 py-3 rounded-lg text-white font-semibold hover:bg-opacity-90 transition-colors">
+            <button className="bg-accent px-8 py-3 rounded-lg text-gray font-semibold hover:bg-opacity-90 transition-colors">
               Learn More
             </button>
           </motion.div>

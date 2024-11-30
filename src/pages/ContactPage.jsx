@@ -9,7 +9,7 @@ const ContactPage = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto text-white"
+          className="max-w-4xl mx-auto text-gray"
         >
           <h1 className="text-4xl font-bold mb-12 text-center">Get in Touch</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -19,9 +19,9 @@ const ContactPage = () => {
                 <p>
                   <strong>Address:</strong>
                   <br />
-                  123 Industrial Avenue
+                  2101 E 21st St N,
                   <br />
-                  Tech City, TC 12345
+                  Wichita, KS 67214
                 </p>
                 <p>
                   <strong>Email:</strong>
@@ -31,7 +31,7 @@ const ContactPage = () => {
                 <p>
                   <strong>Phone:</strong>
                   <br />
-                  (555) 123-4567
+                  (316) 831-9937
                 </p>
               </div>
             </div>
@@ -41,7 +41,7 @@ const ContactPage = () => {
                   <label className="block mb-2">Name</label>
                   <input
                     type="text"
-                    className="w-full p-3 rounded bg-secondary text-white"
+                    className="w-full p-3 rounded bg-secondary text-gray"
                     placeholder="Your name"
                   />
                 </div>
@@ -49,20 +49,20 @@ const ContactPage = () => {
                   <label className="block mb-2">Email</label>
                   <input
                     type="email"
-                    className="w-full p-3 rounded bg-secondary text-white"
+                    className="w-full p-3 rounded bg-secondary text-gray"
                     placeholder="Your email"
                   />
                 </div>
                 <div>
                   <label className="block mb-2">Message</label>
                   <textarea
-                    className="w-full p-3 rounded bg-secondary text-white h-32"
+                    className="w-full p-3 rounded bg-secondary text-gray h-32"
                     placeholder="Your message"
                   ></textarea>
                 </div>
                 <button
                   type="submit"
-                  className="bg-accent px-8 py-3 rounded-lg text-white font-semibold hover:bg-opacity-90 transition-colors"
+                  className="bg-accent px-8 py-3 rounded-lg text-gray font-semibold hover:bg-opacity-90 transition-colors"
                 >
                   Send Message
                 </button>

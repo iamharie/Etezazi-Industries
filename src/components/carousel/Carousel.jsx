@@ -21,10 +21,10 @@ const Carousel = () => {
         <motion.div
           key={currentIndex}
           className="absolute inset-0"
-          initial={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 1 }}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: 0.5 }}
         >
           <img
             src={carouselImages[currentIndex].url}
