@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-secondary text-gray py-4 relative z-50">
+    <nav className="bg-secondary text-gray py-4 sticky top-0 z-50 ">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <NavLink to="/" className="text-2xl font-bold">
