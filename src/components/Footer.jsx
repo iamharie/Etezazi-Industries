@@ -13,7 +13,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact</h3>
             <p>Email: info@etezazi.com</p>
-            <p>Phone: (555) 123-4567</p>
+            <p>Phone: (316) 831-9937</p>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>
@@ -22,14 +22,14 @@ const Footer = () => {
                 href={null}
                 className="flex flex-col items-center hover:text-accent transition-colors cursor-pointer"
               >
-                <FaLinkedin size={24} />
+                <FaLinkedin size={20} />
                 <span className="mt-2 text-sm">LinkedIn</span>
               </a>
               <a
                 href={null}
                 className="flex flex-col items-center hover:text-accent transition-colors cursor-pointer"
               >
-                <FaTwitterSquare size={24} />
+                <FaTwitterSquare size={20} />
                 <span className="mt-2 text-sm">Twitter</span>
               </a>
 
@@ -37,7 +37,7 @@ const Footer = () => {
                 href={null}
                 className="flex flex-col items-center hover:text-accent transition-colors cursor-pointer"
               >
-                <FaFacebookSquare size={24} />
+                <FaFacebookSquare size={20} />
                 <span className="mt-2 text-sm">Facebook</span>
               </a>
             </div>

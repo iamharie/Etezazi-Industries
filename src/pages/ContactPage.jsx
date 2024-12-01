@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Form from "../components/Form";
 
 const ContactPage = () => {
   return (
@@ -36,7 +37,8 @@ const ContactPage = () => {
               </div>
             </div>
             <div>
-              <form className="space-y-6">
+              <Form />
+              {/* <form className="space-y-6">
                 <div>
                   <label className="block mb-2">Name</label>
                   <input
@@ -66,7 +68,7 @@ const ContactPage = () => {
                 >
                   Send Message
                 </button>
-              </form>
+              </form> */}
             </div>
           </div>
         </motion.div>

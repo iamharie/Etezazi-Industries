@@ -13,7 +13,7 @@ const About = () => {
         >
           <h2 className="text-4xl font-bold mb-8 text-center">About Us</h2>
           <div className="space-y-6">
-            <p className="text-lg">
+            {/* <p className="text-lg">
               Founded with a vision to revolutionize industrial manufacturing,
               Etezazi Industries has been at the forefront of innovation since
               its inception.
@@ -22,7 +22,7 @@ const About = () => {
               Our commitment to excellence and cutting-edge technology has made
               us a leader in the industry, serving clients worldwide with
               state-of-the-art solutions.
-            </p>
+            </p> */}
 
             <p className="text-lg">
               How does a company increase its client base and most of such

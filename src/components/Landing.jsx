@@ -1,8 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Carousel from "./carousel/Carousel";
+import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
+  const navigate = useNavigate();
+  function handleNavigate() {
+    navigate("/services");
+  }
   return (
     <div className="relative h-screen">
       <Carousel />
@@ -18,10 +23,14 @@ const Landing = () => {
               Welcome to Etezazi Industries
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white">
-              Leading the way in innovative industrial solutions and
-              manufacturing excellence.
+              {/* Leading the way in innovative industrial solutions and
+              manufacturing excellence. */}
+              Rapid Response with Accurate Solutions
             </p>
-            <button className="bg-accent px-8 py-3 rounded-lg text-gray font-semibold hover:bg-opacity-90 transition-colors">
+            <button
+              onClick={handleNavigate}
+              className="bg-accent px-8 py-3 rounded-lg text-gray font-semibold hover:bg-opacity-90 transition-colors"
+            >
               Learn More
             </button>
           </motion.div>

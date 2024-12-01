@@ -1,4 +1,5 @@
 import React from "react";
+import Form from "./Form";
 
 const Contact = () => {
   return (
@@ -6,7 +7,8 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12">Contact Us</h2>
         <div className="max-w-2xl mx-auto">
-          <form className="space-y-6">
+          <Form />
+          {/* <form className="space-y-6">
             <div>
               <label className="block mb-2">Name</label>
               <input
@@ -39,7 +41,7 @@ const Contact = () => {
             >
               Send Message
             </button>
-          </form>
+          </form> */}
         </div>
       </div>
     </section>
