@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 import { useState } from "react";
 
 export default function Form() {
@@ -22,23 +21,27 @@ export default function Form() {
 
   // Handle form submission
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
+    // Prevent default form submission behavior
+    e.preventDefault();
 
     try {
       const response = await fetch(
-        "https://etezazi-industries-default-rtdb.firebaseio.com/forms.json", // Add `.json` at the end for Firebase Realtime DB
+        // added `.json` at the end for Firebase Realtime DB
+        "https://etezazi-industries-default-rtdb.firebaseio.com/forms.json",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(formData), // Convert form data to JSON
+          // Convert form data to JSON to have the data read
+          body: JSON.stringify(formData),
         }
       );
 
       if (response.ok) {
         setSuccessMessage("Form submitted successfully!");
-        setFormData({ name: "", email: "", message: "" }); // Reset form fields
+        // Reset form fields
+        setFormData({ name: "", email: "", message: "" });
       } else {
         throw new Error("Failed to submit form");
       }
