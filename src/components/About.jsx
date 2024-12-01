@@ -13,52 +13,48 @@ const About = () => {
         >
           <h2 className="text-4xl font-bold mb-8 text-center">About Us</h2>
           <div className="space-y-6">
-            {/* <p className="text-lg">
-              Founded with a vision to revolutionize industrial manufacturing,
-              Etezazi Industries has been at the forefront of innovation since
-              its inception.
+            <p className="text-lg mb-10">
+              Etezazi Industries, Inc., is a diverse manufacturing company
+              specializing in advanced solutions for precision engineering and
+              manufacturing. Our expertise encompasses a wide range of
+              capabilities, including CNC Mills, Lathes, Mill-Turns, and
+              Mechanical Brakes. These tools enable us to manufacture complex
+              multi-axis components and sheet metal parts, meticulously tailored
+              to meet our clients' specific needs and requirements.
+              <br />
+              <br />
+              At Etezazi Industries, we are committed to excellence through
+              workplace organization and standardized procedures, guided by the
+              6S philosophy. This approach helps us reduce waste, enhance
+              safety, and optimize operational efficiency. By partnering with
+              us, clients benefit from a team of skilled professionals,
+              innovative technologies, and a proactive mindset to address
+              challenges in a fast-paced and dynamic industry.
             </p>
-            <p className="text-lg">
-              Our commitment to excellence and cutting-edge technology has made
-              us a leader in the industry, serving clients worldwide with
-              state-of-the-art solutions.
-            </p> */}
-
-            <p className="text-lg">
-              How does a company increase its client base and most of such
-              customers continue through the years as highly-loyal clients? In
-              the case of Etezazi Industries, Inc., the process can be easily
-              identified.
+          </div>
+          <div className="bg-secondary p-6 rounded-lg mt-8">
+            <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
+            <p>
+              At Etezazi Industries, Inc., our mission is to consistently
+              deliver excellence by adhering to the highest standards of quality
+              and innovation. We strive to meet and exceed client expectations
+              by maintaining AS9100D-certified processes, ensuring reliability
+              and trust in every aspect of our operations.
+              <br />
+              <br /> We are committed to investing in state-of-the-art equipment
+              and facilities, coupled with fostering a team of seasoned
+              professionals and degreed engineers. This approach equips us with
+              the expertise and technology necessary to provide cutting-edge
+              solutions and superior products in a rapidly evolving, highly
+              technical industry.
+              <br />
+              <br /> Guided by the principles of the 6S philosophy, we focus on
+              creating a lean, efficient, and safe work environment. By
+              simplifying processes, reducing waste, and improving safety, we
+              enhance quality and efficiency to consistently deliver value to
+              our clients.
+              <br />
             </p>
-            <div className="bg-secondary p-6 rounded-lg mt-8">
-              <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-              <p>
-                Etezazi Industries, Inc., constantly pursues excellence by:
-                adherence to its AS9100D processes and procedures; continually
-                upgrading and reinvesting in equipment and facilities; and
-                paying special attention to a balanced combination of seasoned
-                professionals and degreed engineers to bring cutting edge
-                knowledge and technology to the delivery of its products.
-                <br />
-                <br /> Clients partnering with the Etezazi Industries, Inc.,
-                team find themselves working with a sound group of professionals
-                to discuss challenges and find solutions to a rapidly-changing
-                and highly technical industry.
-                <br />
-                <br /> As a diverse manufacturing company we have the ability to
-                use various types of manufacturing equipment such as: CNC Mills;
-                Lathes; Mill-Turns; and Mechanical Brakes to manufacture complex
-                multi-axis parts, as well as sheet metal parts for our clients.
-                We offer advanced capabilities for client care by adopting the
-                6S Philosophy.
-                <br />
-                <br /> Etezazi Industries, Inc., focuses on effective work place
-                organization and standardized work procedures. The 6S philosophy
-                simplifies our work environment, reduces waste and non-value
-                added activity while improving quality, efficiency and safety to
-                help create a lean, effective company.
-              </p>
-            </div>
           </div>
         </motion.div>
       </div>

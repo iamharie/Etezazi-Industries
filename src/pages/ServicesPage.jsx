@@ -10,21 +10,21 @@ const ServicesPage = () => {
       icon: "🏭",
     },
     {
-      title: "Engineering Solutions",
+      title: "Assembly",
       description:
-        "Custom engineering solutions tailored to meet your specific industrial needs.",
+        "Precision assembly services to ensure seamless integration of components, delivering reliable and high-quality finished products.",
       icon: "⚙️",
     },
     {
-      title: "Consulting Services",
+      title: "Inventory Management",
       description:
-        "Expert consulting to optimize your industrial processes and operations.",
+        "Efficient inventory management solutions, including kitting, Vendor-Owned Inventory (VOI), and Vendor-Managed Inventory (VMI), to streamline supply chain operations and ensure timely delivery of high-quality components.",
       icon: "📊",
     },
     {
-      title: "Quality Assurance",
+      title: "Delivery and Tracking",
       description:
-        "Rigorous quality control and testing procedures for all products.",
+        "Reliable delivery and tracking services to ensure timely, secure shipments with real-time updates for complete transparency and customer satisfaction.",
       icon: "✓",
     },
   ];

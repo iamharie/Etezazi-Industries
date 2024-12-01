@@ -41,17 +41,6 @@ const Footer = () => {
                 <span className="mt-2 text-sm">Facebook</span>
               </a>
             </div>
-            {/* <div className="space-x-4 cursor-pointer">
-              <a href={null} className="hover:text-accent ">
-                LinkedIn
-              </a>
-              <a href={null} className="hover:text-accent">
-                Twitter
-              </a>
-              <a href={null} className="hover:text-accent">
-                Facebook
-              </a>
-            </div> */}
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
@@ -59,6 +48,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Etezazi Industries. All rights
             reserved.
           </p>
+          <p>Developed with ❤️ by Hari</p>
         </div>
       </div>
     </footer>

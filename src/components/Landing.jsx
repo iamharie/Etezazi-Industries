@@ -23,8 +23,6 @@ const Landing = () => {
               Welcome to Etezazi Industries
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white">
-              {/* Leading the way in innovative industrial solutions and
-              manufacturing excellence. */}
               Rapid Response with Accurate Solutions
             </p>
             <button
