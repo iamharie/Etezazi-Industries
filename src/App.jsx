@@ -8,6 +8,7 @@ import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
 import TeamPage from "./pages/TeamPage";
 import Root from "./pages/Root";
+import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
   const router = createBrowserRouter([
@@ -23,7 +24,12 @@ function App() {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  );
+
   // <Router>
   //   <div className="min-h-screen bg-primary flex flex-col">
   //     <Navbar />

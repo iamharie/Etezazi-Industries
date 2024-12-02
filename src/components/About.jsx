@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section className="py-20 bg-primary">
+    <section className="py-20 bg-primary-light dark:bg-primary">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto text-gray"
+          className="max-w-4xl mx-auto text-text-light dark:text-text-dark"
         >
           <h2 className="text-4xl font-bold mb-8 text-center">About Us</h2>
           <div className="space-y-6">
@@ -32,7 +32,7 @@ const About = () => {
               challenges in a fast-paced and dynamic industry.
             </p>
           </div>
-          <div className="bg-secondary p-6 rounded-lg mt-8">
+          <div className="bg-secondary-light dark:bg-secondary p-6 rounded-lg mt-8">
             <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
             <p>
               At Etezazi Industries, Inc., our mission is to consistently

@@ -4,13 +4,13 @@ import Form from "../components/Form";
 
 const ContactPage = () => {
   return (
-    <section className="py-20 bg-primary min-h-screen">
+    <section className="py-20 bg-primary-light dark:bg-primary min-h-screen">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto text-gray"
+          className="max-w-4xl mx-auto text-text-light dark:text-text-dark"
         >
           <h1 className="text-4xl font-bold mb-12 text-center">Get in Touch</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

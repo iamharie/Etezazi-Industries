@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../assets/logo.png";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,16 +18,18 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-secondary text-gray py-4 sticky top-0 z-50 ">
+    <nav className="bg-secondary-light dark:bg-secondary text-text-light dark:text-text-dark py-2 sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <NavLink to="/" className="text-2xl font-bold">
-            {/* Etezazi Industries */}
-            <img src={logo} alt="Etezazi Industries" className="w-30 h-10" />
+            <img
+              src={logo}
+              alt="Etezazi Industries"
+              className="w-32 h-14  bg-secondary-light rounded-lg"
+            />
           </NavLink>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden md:flex items-center space-x-6">
             <NavLink
               to="/"
               className={({ isActive }) =>
@@ -68,33 +71,35 @@ const Navbar = () => {
             >
               Contact
             </NavLink>
+            <ThemeToggle />
           </div>
 
-          {/* Hamburger Button */}
-          <button
-            className="md:hidden text-gray focus:outline-none"
-            onClick={toggleMenu}
-            aria-label="Toggle menu"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+          <div className="md:hidden flex items-center space-x-4">
+            <ThemeToggle />
+            <button
+              className="text-text-light dark:text-text-dark focus:outline-none"
+              onClick={toggleMenu}
+              aria-label="Toggle menu"
             >
-              {isOpen ? (
-                <path d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                {isOpen ? (
+                  <path d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
 
-        {/* Mobile Menu */}
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -102,7 +107,7 @@ const Navbar = () => {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.2 }}
-              className="md:hidden absolute left-0 right-0 top-full bg-primary shadow-lg"
+              className="md:hidden absolute left-0 right-0 top-full bg-primary-light dark:bg-primary shadow-lg"
             >
               <div className="flex flex-col space-y-4 p-4">
                 <NavLink
@@ -159,6 +164,154 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+//   return (
+//     <nav className="bg-secondary text-gray py-4 sticky top-0 z-50 ">
+//       <div className="container mx-auto px-4">
+//         <div className="flex justify-between items-center">
+//           <NavLink to="/" className="text-2xl font-bold">
+//             {/* Etezazi Industries */}
+//             <img src={logo} alt="Etezazi Industries" className="w-30 h-10" />
+//           </NavLink>
+
+//           {/* Desktop Menu */}
+//           <div className="hidden md:flex space-x-6">
+//             <NavLink
+//               to="/"
+//               className={({ isActive }) =>
+//                 isActive
+//                   ? "text-accent font-semibold transition-colors"
+//                   : "hover:text-accent transition-colors"
+//               }
+//               end
+//             >
+//               Home
+//             </NavLink>
+//             <NavLink
+//               to="/services"
+//               className={({ isActive }) =>
+//                 isActive
+//                   ? "text-accent font-semibold transition-colors"
+//                   : "hover:text-accent transition-colors"
+//               }
+//             >
+//               Services
+//             </NavLink>
+//             <NavLink
+//               to="/team"
+//               className={({ isActive }) =>
+//                 isActive
+//                   ? "text-accent font-semibold transition-colors"
+//                   : "hover:text-accent transition-colors"
+//               }
+//             >
+//               Team
+//             </NavLink>
+//             <NavLink
+//               to="/contact"
+//               className={({ isActive }) =>
+//                 isActive
+//                   ? "text-accent font-semibold transition-colors"
+//                   : "hover:text-accent transition-colors"
+//               }
+//             >
+//               Contact
+//             </NavLink>
+//             <ThemeToggle />
+//           </div>
+
+//           {/* Hamburger Button */}
+//           <button
+//             className="md:hidden text-gray focus:outline-none"
+//             onClick={toggleMenu}
+//             aria-label="Toggle menu"
+//           >
+//             <svg
+//               className="w-6 h-6"
+//               fill="none"
+//               strokeLinecap="round"
+//               strokeLinejoin="round"
+//               strokeWidth="2"
+//               viewBox="0 0 24 24"
+//               stroke="currentColor"
+//             >
+//               {isOpen ? (
+//                 <path d="M6 18L18 6M6 6l12 12" />
+//               ) : (
+//                 <path d="M4 6h16M4 12h16M4 18h16" />
+//               )}
+//             </svg>
+//           </button>
+//         </div>
+
+//         {/* Mobile Menu */}
+//         <AnimatePresence>
+//           {isOpen && (
+//             <motion.div
+//               initial={{ opacity: 0, height: 0 }}
+//               animate={{ opacity: 1, height: "auto" }}
+//               exit={{ opacity: 0, height: 0 }}
+//               transition={{ duration: 0.2 }}
+//               className="md:hidden absolute left-0 right-0 top-full bg-primary shadow-lg"
+//             >
+//               <div className="flex flex-col space-y-4 p-4">
+//                 <NavLink
+//                   to="/"
+//                   className={({ isActive }) =>
+//                     isActive
+//                       ? "text-accent font-semibold transition-colors"
+//                       : "hover:text-accent transition-colors"
+//                   }
+//                   onClick={closeMenu}
+//                 >
+//                   Home
+//                 </NavLink>
+//                 <NavLink
+//                   to="/services"
+//                   className={({ isActive }) =>
+//                     isActive
+//                       ? "text-accent font-semibold transition-colors"
+//                       : "hover:text-accent transition-colors"
+//                   }
+//                   onClick={closeMenu}
+//                 >
+//                   Services
+//                 </NavLink>
+//                 <NavLink
+//                   to="/team"
+//                   className={({ isActive }) =>
+//                     isActive
+//                       ? "text-accent font-semibold transition-colors"
+//                       : "hover:text-accent transition-colors"
+//                   }
+//                   onClick={closeMenu}
+//                 >
+//                   Team
+//                 </NavLink>
+//                 <NavLink
+//                   to="/contact"
+//                   className={({ isActive }) =>
+//                     isActive
+//                       ? "text-accent font-semibold transition-colors"
+//                       : "hover:text-accent transition-colors"
+//                   }
+//                   onClick={closeMenu}
+//                 >
+//                   Contact
+//                 </NavLink>
+//               </div>
+//             </motion.div>
+//           )}
+//         </AnimatePresence>
+//       </div>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
+
+/////////
+/////////
 
 // import React, { useState } from "react";
 // import { Link } from "react-router-dom";

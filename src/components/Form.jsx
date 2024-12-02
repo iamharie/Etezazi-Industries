@@ -60,7 +60,7 @@ export default function Form() {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full p-3 rounded bg-secondary text-gray"
+            className="w-full p-3 rounded bg-secondary-light dark:bg-secondary text-text-light dark:text-text-dark"
             placeholder="Your name"
             required
           />
@@ -72,7 +72,7 @@ export default function Form() {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full p-3 rounded bg-secondary text-gray"
+            className="w-full p-3 rounded bg-secondary-light dark:bg-secondary text-text-light dark:text-text-dark"
             placeholder="Your email"
             required
           />
@@ -83,14 +83,14 @@ export default function Form() {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full p-3 rounded bg-secondary text-gray h-32"
+            className="w-full p-3 rounded bg-secondary-light dark:bg-secondary text-text-light dark:text-text-dark h-32"
             placeholder="Your message"
             required
           ></textarea>
         </div>
         <button
           type="submit"
-          className="bg-accent px-8 py-3 rounded-lg text-gray font-semibold hover:bg-opacity-90 transition-colors"
+          className="bg-accent px-8 py-3 rounded-lg text-white font-semibold hover:bg-opacity-90 transition-colors"
         >
           Send Message
         </button>

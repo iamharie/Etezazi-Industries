@@ -3,7 +3,7 @@ import { FaLinkedin, FaTwitterSquare, FaFacebookSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary text-gray py-8">
+    <footer className="bg-secondary-light dark:bg-secondary text-text-light dark:text-text-dark py-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-gray-700 text-center">
+        <div className="mt-8 pt-8 border-t border-secondary dark:border-secondary-light text-center">
           <p>
             &copy; {new Date().getFullYear()} Etezazi Industries. All rights
             reserved.
