@@ -34,6 +34,7 @@ const Navbar = () => {
                   ? "text-accent font-semibold transition-colors"
                   : "hover:text-accent transition-colors"
               }
+              end
             >
               Home
             </NavLink>
